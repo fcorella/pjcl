@@ -1,0 +1,10 @@
+{
+    "type": "module",
+    "name": "pjcl",
+    "version": "1.0.0",
+    "description": "Pomcor JavaScript Cryptographic Library",
+    "main": "pjcl.js",
+    "repository": "github:fcorella/pjcl",
+    "author": "Francisco Corella (https://pomcor.com)",
+    "license": "MIT"
+}
