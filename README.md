@@ -5,9 +5,9 @@ This is version 1.0.0 of the Pomcor JavaScript Cryptographic Library
 intended at this time as a tool for implementing phishing-resistant
 cryptographic authentication in web applications, as demonstrated in
 the companion repositories
-[fcorella/crypto-authn-demo-nosql](../fcorella/crypto-authn-demo-nosql)
+[fcorella/crypto-authn-demo-nosql](https://github.com/fcorella/crypto-authn-demo-nosql.nogit)
 and
-[fcorella/crypto-authn-demo-sql](../fcorella/crypto-authn-demo-sql).
+[fcorella/crypto-authn-demo-nosql](https://github.com/fcorella/crypto-authn-demo-sql.nogit).
 
 The file pjcl-with-argument-checking.js augments pjcl.js with code
 that checks the arguments of cryptographic functions, to help with
@@ -18,9 +18,6 @@ argument-checking preambles of the functions.
 PJCL uses Deterministic Random Bit Generators (DRBGs) as specified in
 NIST Special publication 800-90A Revision 1 for generation of random
 bits, and needs sources of entropy.  The companion repositories
-[fcorella/crypto-authn-demo-nosql](../fcorella/crypto-authn-demo-nosql)
-and
-[fcorella/crypto-authn-demo-sql](../fcorella/crypto-authn-demo-sql)
 show how /dev/random can be used to obtain server entropy when PJCL is
 used on the backend, under Nodejs, and how browser entropy can be
 combined with entropy downloaded from the server when PJCL is used on
