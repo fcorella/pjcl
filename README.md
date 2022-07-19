@@ -5,9 +5,9 @@ This is version 1.0.0 of the Pomcor JavaScript Cryptographic Library
 intended at this time as a tool for implementing phishing-resistant
 cryptographic authentication in web applications, as demonstrated in
 the companion repositories
-[fcorella/crypto-authn-demo-nosql](https://github.com/fcorella/crypto-authn-demo-nosql.nogit)
+[fcorella/crypto-authn-demo-nosql](https://github.com/fcorella/crypto-authn-demo-nosql.git)
 and
-[fcorella/crypto-authn-demo-nosql](https://github.com/fcorella/crypto-authn-demo-sql.nogit).
+[fcorella/crypto-authn-demo-sql](https://github.com/fcorella/crypto-authn-demo-sql.git).
 
 The file pjcl-with-argument-checking.js augments pjcl.js with code
 that checks the arguments of cryptographic functions, to help with
