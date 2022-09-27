@@ -160,10 +160,10 @@ export function pjclUI32Array2ByteArray(x) {
 }
 
 export function pjclBigInt2ES11BI(x) {
-    const _pjclBaseBitLength = BigInt(pjclBaseBitLength);
+    const pjclBaseBitLength = BigInt(this.pjclBaseBitLength);
     var y = BigInt(0);
     for (var i = x.length - 1; i >= 0; i--) {
-        y = (y << _pjclBaseBitLength) | BigInt(x[i]);
+        y = (y << pjclBaseBitLength) | BigInt(x[i]);
     }
     if (x.negative) 
         return -y;
@@ -171,14 +171,14 @@ export function pjclBigInt2ES11BI(x) {
 }
 
 export function pjclES11BI2BigInt(x) {
-    const _pjclBaseBitLength = BigInt(pjclBaseBitLength), _pjclBaseMask = BigInt(pjclBaseMask);
+    const pjclBaseBitLength = BigInt(this.pjclBaseBitLength), pjclBaseMask = BigInt(this.pjclBaseMask);
     var y = [];
     if (i < 0) {
         y.negative = true;
         x = -x;
     }
-    for(; y; y >>= _pjclBaseBitLength) {
-        y.push(Number(x & _pjclBaseMask));
+    for(; y; y >>= pjclBaseBitLength) {
+        y.push(Number(x & pjclBaseMask));
     }
     return y;
 }
