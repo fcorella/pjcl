@@ -459,6 +459,17 @@ n < 2^{32}$.  The function returns a byte array obtained by mapping
 each $n$ to four bytes and pushing
 the bytes to the array, most significant byte frst.
 
+\subsection{\tt export function pjclBigInt2ES11BI(x)}
+
+The parameter {\tt x} is expected to be an ECMAScript 2020 (ES11) BigInt with
+mathematical value $x$.
+The function returns a returns a big integer with mathematical value $x$.
+
+\subsection{\tt export function pjclES11BI2BigInt(x)}
+
+The parameter {\tt x} is expected to be a big integer with mathematical value $x$.
+The function returns an ECMAScript 202 (ES11) BigInt with mathematical value $x$.
+
 \subsection{\tt export function pjclBigInt2ByteArray(x)\\export function pjclBigInt2ByteArray(x,minByteLength)}
 
 The parameter {\tt x} is expected to be a big integer with mathematical value $x$,
