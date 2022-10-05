@@ -31,8 +31,6 @@ Extensive cryptographic documentation can be found in the PDF file
 [pjcl-documentation.pdf](https://github.com/fcorella/pjcl/blob/main/pjcl-documentation.pdf), 
 which is now in the repository together with its latex source file
 [pjcl-documentation.tex](https://github.com/fcorella/pjcl/blob/main/pjcl-documentation.tex).
-A copy of the documenation can still be found in the Pomcor web site at
-https://pomcor.com/pjcl/pjcl-documentation.pdf.
 
 ## Security
 
