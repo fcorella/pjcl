@@ -6,6 +6,31 @@ export const pjclBaseInv = 1 / pjclBase;
 export const pjclBaseAsBigInt = [0,1];
 export const pjclHalfBase = 1 << (pjclBaseBitLength - 1);
 
+export function pjclBigInt_from_ES11BigInt(i) {
+    const _pjclBaseBitLength = BigInt(pjclBaseBitLength),
+          _pjclBaseMask = BigInt(pjclBaseMask);
+    var x = [];
+    if (i < 0) {
+        x.negative = true;
+        i = -i;
+    }
+    while (i) {
+        x.push(Number(i & _pjclBaseMask));
+        i >>= _pjclBaseBitLength;
+    }
+    return x;
+}
+
+export function pjclBigInt_to_ES11BigInt(x) {
+    const _pjclBaseBitLength = BigInt(pjclBaseBitLength);
+    var i = x.reduceRight((i, nextLeg) => (
+        (i << _pjclBaseBitLength) | BigInt(nextLeg)
+    ), BigInt(0));
+    if (x.negative)
+        return -i;
+    return i;
+}
+
 export function pjclByte2BitArray(byte) {
     return [(byte >>> 7) & 1, (byte >>> 6) & 1, (byte >>> 5) & 1, (byte >>> 4) & 1, (byte >>> 3) & 1, (byte >>> 2) & 1, (byte >>> 1) & 1, byte & 1];
 }
