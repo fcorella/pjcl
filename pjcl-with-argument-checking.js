@@ -81,7 +81,7 @@ export function pjclBigInt_from_ES11BigInt(i) {
         i = -i;
     }
     while (i) {
-        x.push(Number(i & _pjclBaseMask)));
+        x.push(Number(i & _pjclBaseMask));
         i >>= _pjclBaseBitLength;
     }
     return x;
