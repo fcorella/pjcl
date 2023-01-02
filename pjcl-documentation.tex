@@ -22,11 +22,11 @@
 \pagestyle{fancy}
 %\fancyhead{}
 %\fancyfoot{}
-\lhead{PJCL Version 1.0.0}
-%\chead{{\copyright} Copyright 2018-2022 Pomcor}
+\lhead{PJCL Version 1.0.1}
+%\chead{{\copyright} Copyright 2018-2023 Pomcor}
 \rhead{\thepage}
 %\fancyfoot{}
-\fancyfoot[C]{{\copyright} Copyright 2018-2022 Pomcor}
+\fancyfoot[C]{{\copyright} Copyright 2018-2023 Pomcor}
 %\fancyfoot[C]{Pomcor Confidential}
 %\fancyfoot[RO,RE] {\thepage}
 \renewcommand{\headrulewidth}{0pt}
@@ -34,7 +34,7 @@
 {%
    \renewcommand{\headrulewidth}{0pt}%
    \fancyhf{}%
-   \fancyfoot[C]{{\copyright} Copyright 2018-2022 Pomcor}
+   \fancyfoot[C]{{\copyright} Copyright 2018-2023 Pomcor}
 }
 
 %\newtheorem{fact}{Fact}
@@ -46,7 +46,7 @@
 \begin{document}
 
 \title{Pomcor JavaScript Cryptographic Library (PJCL)\\\normalsize\url{https://pomcor.com/pjcl/}}
-\author{Version 1.0.0}
+\author{Version 1.0.1}
 \date{}
 \maketitle
 
@@ -327,13 +327,13 @@ integer, or {\tt false} otherwise.  It is used for argument checking.
 
 \section{Conversion functions}
 
-\subsection{\tt export function pjclBigInt_from_ES11BigInt(i)}
+\subsection{\tt export function pjclBigInt\_from\_ES11BigInt(i)}
 
 The parameter {\tt x} is expected to be an ECMAScript 2020 (ES11) BigInt with
 mathematical value $i$.
 The function returns a returns a big integer with mathematical value $i$.
 
-\subsection{\tt export function pjclBigInt_to_ES11BigInt(x)}
+\subsection{\tt export function pjclBigInt\_to\_ES11BigInt(x)}
 
 The parameter {\tt x} is expected to be a big integer with mathematical value $x$.
 The function returns an ECMAScript 2020 (ES11) BigInt with mathematical value $x$.
@@ -2359,7 +2359,7 @@ the $x$ coordinate of the affine representation of $P$ as a byte array.
 \addcontentsline{toc}{section}{References}{}
 \bibliographystyle{unsrt}
 \flushleft
-\bibliography{/Users/fcore/Documents/general}
+\bibliography{pjcl-documentation.bib}
 \end{document}
 
 
