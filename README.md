@@ -1,6 +1,6 @@
 # pjcl
 
-This is version 1.0.0 of the Pomcor JavaScript Cryptographic Library
+This is version 1.0.1 of the Pomcor JavaScript Cryptographic Library
 (PJCL), which has been refactored as an ES6 module and is primarily
 intended at this time as a tool for implementing phishing-resistant
 cryptographic authentication in web applications, as demonstrated in
